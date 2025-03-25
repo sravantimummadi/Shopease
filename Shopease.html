@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shopease.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius+Swash+Caps&family=Dosis:wght@200..800&family=IM+Fell+French+Canon+SC&family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">  
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">ShopEase</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="hover:text-blue-600">Shop</a></li>
+                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <!-- Hero Section with Animated Background -->
+    <header class="h-screen flex items-center justify-center text-white text-center relative animated-bg">
+        <div class="overlay p-10 rounded-lg animate-fadeIn">
+            <h2 class="text-4xl font-bold mb-4">Welcome to ShopEase</h2>
+            <p class="mb-6">Find the best deals on the latest products!</p>
+            <a href="#products" class="bg-blue-600 px-6 py-3 rounded-lg text-white hover:bg-blue-700 transition">Shop Now</a>
+        </div>
+    </header>
+    
+    <!-- Product Section -->
+    <section id="products" class="py-16 container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition">
+                <img src="828a60bfe3e847d93746d0f0f3842ced (1).jpg" alt="Product" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">Stylish Jacket</h3>
+                <!--<p class="text-gray-500">$49.99</p>-->
+                <a href=https://www.flipkart.com/search?q=stylish+jacket&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_5_10_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_5_10_na_na_na&as-pos=5&as-type=RECENT&suggestionId=stylish+jacket&requestId=d9a6434b-714f-489b-b08d-a5c1cfd64f3d&as-backfill=on"><button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition">View All</button>
+                </div></a>
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition">
+                <img src="1508-best-comfortable-running-shoes-16395638-main.webp" alt="Product" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">Running Shoes</h3>
+                <!--<p class="text-gray-500">$59.99</p>-->
+                <a href="https://www.flipkart.com/search?q=shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition">View All</button></a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition">
+                <img src="Starmax-Product-Range-Summer-2024-2.webp" alt="Product" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">Smart Watch</h3>
+                <a href="https://www.flipkart.com/search?q=smartwatch&sid=ajy%2Cbuh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=RECENT&suggestionId=smartwatch%7CSmart+Watches&requestId=048e7940-61f6-4e24-bb2b-3532982489da&as-backfill=on"><button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition">View All</button></a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transition">
+                <img src="ChapterOneCharcoalHoodie-Lucy.webp" alt="Product" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">Hoddies</h3>
+                <a href="https://www.flipkart.com/search?q=hoddie&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_6_4_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_6_4_na_na_na&as-pos=6&as-type=RECENT&suggestionId=hoddie&requestId=ba5a49ec-9c08-48e8-a352-3eaf20c59afa&as-backfill=on"><button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition">View All</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-16">
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer> 
+</body>
+</html>
