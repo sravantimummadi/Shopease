@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="shopease.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius+Swash+Caps&family=Dosis:wght@200..800&family=IM+Fell+French+Canon+SC&family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-100">  
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-10">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">ShopEase</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#" class="hover:text-blue-600">Home</a></li>
-                <li><a href="#" class="hover:text-blue-600">Shop</a></li>
-                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
-            </ul>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius+Swash+Caps&family=Dosis:wght@200..800&family=IM+Fell+French+Canon+SC&family=Merriweather&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="shologo.png" alt="Logo">
         </div>
-    </nav>   
-    <!-- Hero Section with Animated Background -->
+        <div class="nav-links">
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#kids">Kids</a>
+            <a href="#Home & Beauty">Home & Beauty</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <a href="#cart" class="cart-icon">🛒</a>
+            <a href="#signin" class="signin">👤</a>
+        </div>
+    </nav>
     <header class="h-screen flex items-center justify-center text-white text-center relative animated-bg">
         <div class="overlay p-10 rounded-lg animate-fadeIn">
             <h2 class="text-4xl font-bold mb-4">Welcome to ShopEase</h2>
@@ -30,8 +38,61 @@
             <a href="#products" class="bg-blue-600 px-6 py-3 rounded-lg text-white hover:bg-blue-700 transition">Shop Now</a>
         </div>
     </header>
+    <div class="container">
+        <div class="section-title">
+          <h2>Online Exclusives</h2>
+          <div class="underline"></div>
+        </div>
     
-    <!-- Product Section -->
+        <div class="product-grid">
+          <!-- CURVES -->
+          <a href="#" class="product-card">
+            <div class="product-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/maxfashion.in-m1ZTlPsN887qXDYBTQ2R81eUsxMvh6.png" alt="Curves collection">
+              <!--<div class="brand-logo">curves</div>-->
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">CURVES</h3>
+              <p class="product-description">3XL - 6XL Curvy Styles for you!</p>
+            </div>
+          </a>
+    
+          <!-- GLOBAL STYLES -->
+          <a href="#" class="product-card">
+            <div class="product-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/maxfashion.in-m1ZTlPsN887qXDYBTQ2R81eUsxMvh6.png" alt="Global Styles collection">
+              <!--<div class="brand-logo">max<br>GLOBAL</div>-->
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">GLOBAL STYLES</h3>
+              <p class="product-description">To your doorstep in 2-5 days</p>
+            </div>
+          </a>
+    
+          <!-- WARDROBE MVPs -->
+          <a href="#" class="product-card">
+            <div class="product-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/maxfashion.in-m1ZTlPsN887qXDYBTQ2R81eUsxMvh6.png" alt="Wardrobe MVPs collection">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">WARDROBE MVPs</h3>
+              <p class="product-description">Your favorite bestsellers</p>
+            </div>
+          </a>
+    
+          <!-- VALUE PACKS -->
+          <a href="#" class="product-card">
+            <div class="product-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/maxfashion.in-m1ZTlPsN887qXDYBTQ2R81eUsxMvh6.png" alt="Value Packs collection">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">VALUE PACKS</h3>
+              <p class="product-description">Packs of 2 & 3 starting at 499</p>
+            </div>
+          </a>
+        </div>
+      </div>
+<!--
     <section id="products" class="py-16 container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-10">Featured Products</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -63,8 +124,53 @@
                 <a href="https://www.flipkart.com/search?q=hoddie&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_6_4_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_6_4_na_na_na&as-pos=6&as-type=RECENT&suggestionId=hoddie&requestId=ba5a49ec-9c08-48e8-a352-3eaf20c59afa&as-backfill=on"><button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition">View All</button></a>
             </div>
         </div>
-    </section>
-    <!-- Footer -->
+    </section>-->
+    <div class="container">
+        <div class="section-header">
+          <h2>Srsly Trending RN</h2>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="trending-slider">
+          <div class="trending-cards">
+            <!-- Summer Dresses Card -->
+            <a href="#" class="trending-card">
+              <div class="card-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brave_screenshot_www.maxfashion.in-NbfcNW4G9JAHysUQ1grUX8v6xAVO3X.png" alt="Summer Dresses">
+                <div class="card-overlay"></div>
+                <h3 class="card-title">SUMMER DRESSES</h3>
+              </div>
+            </a>
+            
+            <!-- Printed Resort Shirts Card -->
+            <a href="#" class="trending-card">
+              <div class="card-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brave_screenshot_www.maxfashion.in-NbfcNW4G9JAHysUQ1grUX8v6xAVO3X.png" alt="Printed Resort Shirts">
+                <div class="card-overlay"></div>
+                <h3 class="card-title">PRINTED<br>RESORT SHIRTS</h3>
+              </div>
+            </a>
+            
+            <!-- Cargo Bottoms Card -->
+            <a href="#" class="trending-card">
+              <div class="card-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brave_screenshot_www.maxfashion.in-NbfcNW4G9JAHysUQ1grUX8v6xAVO3X.png" alt="Cargo Bottoms">
+                <div class="card-overlay"></div>
+                <h3 class="card-title">CARGO BOTTOMS</h3>
+              </div>
+            </a>
+            
+            <!-- Anime Tees Card -->
+            <a href="#" class="trending-card">
+              <div class="card-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brave_screenshot_www.maxfashion.in-NbfcNW4G9JAHysUQ1grUX8v6xAVO3X.png" alt="Anime Tees">
+                <div class="card-overlay"></div>
+                <h3 class="card-title">ANIME TEES</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     <footer class="bg-gray-900 text-white text-center p-6 mt-16">
         <p>&copy; 2025 ShopEase. All rights reserved.</p>
     </footer> 
