@@ -13,7 +13,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-
   padding: 15px 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -157,7 +156,7 @@ body {
 }
 
 .product-card {
-  background-color: #f9f5eb;
+  background-color: #f4a109;
   border-radius: 4px;
   overflow: hidden;
   text-decoration: none;
@@ -175,16 +174,23 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: scale(1.05);
 }
 
-.brand-logo {
+/*.brand-logo {
   position: absolute;
   top: 16px;
   left: 16px;
   font-weight: bold;
   font-size: 20px;
 }
-
+*/
 .product-info {
   padding: 16px;
   text-align: center;
@@ -198,7 +204,7 @@ body {
 }
 
 .product-description {
-  color: #666;
+  color: #f5f2f2;
   font-size: 14px;
 }
 
@@ -230,17 +236,24 @@ body {
   overflow: hidden;
 }
 
+.trending-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
 .trending-cards {
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
   padding-bottom: 10px;
 }
 
 .trending-cards::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
 
 .trending-card {
@@ -254,16 +267,30 @@ body {
 
 .card-image {
   position: relative;
-  height: 430px;
+  /*height: 430px';*/
+  width:100%;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
+  border-radius: 12px;
+  transition: border-radius 0.4s ease;
+}
+
+.trending-card:hover .card-image {
+  border-radius: 0 60px 0 60px;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
+
+.trending-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
 
 .card-overlay {
   position: absolute;
@@ -271,7 +298,10 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
+  z-index: 1;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  border-radius: inherit;
+  transition: border-radius 0.4s ease;
 }
 
 .card-title {
@@ -282,9 +312,10 @@ body {
   font-size: 28px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  margin: 0;
+  z-index: 2;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .trending-card {
     flex: 0 0 calc(33.33% - 11px);
@@ -300,9 +331,5 @@ body {
 @media (max-width: 480px) {
   .trending-card {
     flex: 0 0 calc(100% - 0px);
-  }
-  
-  .card-image {
-    height: 350px;
   }
 }
