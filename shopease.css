@@ -100,8 +100,8 @@ body {
   }
 }
 
+
 .animated-bg {
-    background-image: url(ecommerce.jpg);
     background-size: 150% 150%;
     animation: bgAnimation 10s ease infinite;
 }
@@ -114,6 +114,61 @@ body {
 
 .animate-fadeIn {
     animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: fit-content;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 200px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 200px; /* Set a fixed height for uniformity */
+      object-fit: cover; /* Ensure images are cropped proportionally */
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .carousel-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(249, 246, 246, 0.5);
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-arrow span {
+  font-size: 24px;
 }
 
 .container {
