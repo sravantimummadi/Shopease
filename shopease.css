@@ -242,14 +242,6 @@ body {
   transform: scale(1.05);
 }
 
-/*.brand-logo {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  font-weight: bold;
-  font-size: 20px;
-}
-*/
 .product-info {
   padding: 16px;
   text-align: center;
@@ -391,4 +383,10 @@ body {
   .trending-card {
     flex: 0 0 calc(100% - 0px);
   }
+}
+
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the header without zooming */
 }
