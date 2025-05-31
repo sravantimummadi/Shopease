@@ -1,13 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+    font-family: "Dosis", sans-serif;
+    background-color: #f9f9f9;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,50 +27,94 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 40px;
-  margin-left: auto; /* Push the nav links to the right side */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-  font-weight: 500;
-  transition: color 0.3s;
-  
-}
-
-.nav-links a:hover {
-  color: #e91e63;
-}
-
-.nav-right {
-  display: flex;
   align-items: center;
-  gap: 20px;
-  margin-left: 20px; /* Add space between the search bar and the Beauty nav link */
+  gap: 1rem;
 }
 
-.search-bar {
+.nav-item {
   position: relative;
 }
 
+.nav-link {
+  color: rgb(4, 2, 2);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  background-color: #f4f0f0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+}
+.search-bar {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+   gap: 10px;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    position: relative;
+}
+
 .search-bar input {
-  padding: 8px 35px 8px 15px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  font-size: 14px;
-  outline: none;
-  width: 300px; /* Increased the width of the search bar */
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 8px 15px; /* Adjust padding for better alignment */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
 }
 
 .search-bar .search-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  font-size: 18px;
+    position: absolute;
+    right: 10px;
+    color: #666;
+    font-size: 18px;
+    pointer-events: none; /* Prevent interaction with the icon */
 }
 
 .cart-icon, .signin {
@@ -78,6 +122,7 @@ body {
   color: #333;
   text-decoration: none;
   transition: color 0.3s;
+  flex-shrink: 0;
 }
 
 .cart-icon:hover, .signin:hover {
@@ -88,11 +133,6 @@ body {
   .navbar {
       flex-wrap: wrap;
       padding: 10px 20px;
-  }
-
-  .nav-links {
-      gap: 15px;
-      margin: 10px 0;
   }
 
   .search-bar input {
@@ -137,8 +177,8 @@ body {
 
     .carousel-item img {
       width: 100%;
-      height: 200px; /* Set a fixed height for uniformity */
-      object-fit: cover; /* Ensure images are cropped proportionally */
+      height: 200px; 
+      object-fit: cover; 
       border-radius: 10px;
       transition: transform 0.3s;
       cursor: pointer;
@@ -179,7 +219,7 @@ body {
 
 .section-title {
   margin-bottom: 24px;
-  text-align: center; /* Center align the section title */
+  text-align: center;
 }
 
 .section-title h2 {
@@ -192,7 +232,7 @@ body {
   width: 140px;
   height: 4px;
   background-color: #3f51b5;
-  margin: 0 auto; /* Center align the underline */
+  margin: 0 auto; 
   margin-top: 8px;
 }
 
@@ -318,7 +358,7 @@ body {
 
 .card-image {
   position: relative;
-  height: 500px; /* Adjusted height to make images shorter */
+  height: 500px; 
   width:100%;
   overflow: hidden;
   border-radius: 12px;
@@ -388,5 +428,5 @@ body {
 header video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the video covers the header without zooming */
+  object-fit: cover;
 }
